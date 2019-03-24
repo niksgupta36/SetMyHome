@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="login.css">
+<script type="text/javascript">
+
+	function togglemenu(){
+		document.getElementById('navbar').classList.toggle('active');
+	}
+</script>
+<title>Log in</title>
+</head>
+<body>
+
+	<div id="navbar" onclick="togglemenu()">
+		<div class="toggle-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<ul>
+			<li class="logo"><a href="">SETMYHOME</a></li>
+			<li><a href="">Furntiure</a></li>
+			<li><a href="">Students</a></li>
+			<li><a href="">Donors</a></li>
+			<li><a href="">Login</a></li>
+			<li><a href="">Signup</a></li>
+			<li><a href="">Search</a></li>
+			
+		</ul>
+	</div>
+	<div class="sideright">
+				<form>
+					<p id="form_heading1">Please Log in</p>
+					<p id="form_heading2">Log in to manage your account<p>
+					<br> <input type="text" name="firstname"
+						placeholder="Username"> <br> <input type="text"
+						name="lastname" placeholder="Password"><br>
+					<br>
+					<button>Login</button>
+				</form>
+			</div>
+	<div class="main">
+		<img src="setmyhomelogo.PNG">
+	</div>
+	<div class="footer">
+		<ul>
+			
+			<li><a href="">About</a></li>
+			<li><a href="">Careers</a></li>
+			<li><a href="">Help</a></li>
+			<li><a href="">Contact Us</a></li>
+			
+		</ul>
+		<p>&copy; 2019 setmyhome.com All Rights Reserved</p>
+	</div>
+	
+</body>
+</html>
