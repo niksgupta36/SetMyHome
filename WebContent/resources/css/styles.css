@@ -1,0 +1,327 @@
+
+/* GLOBAL STYLES
+.......................................*/
+
+  
+*{
+    padding:0;
+    margin:0;
+}
+  
+ body{
+     width: 100%;
+     overflow-x:hidden;
+ } 
+  
+body,button,label
+{
+    color:#333;
+    font-family:'Century Gothic',Verdana,'Helvetica Neue',sans-serif;
+    font-size:16px;
+    font-weight:300;
+    letter-spacing:1px;
+    line-height:1.44;
+    margin: 0 auto;
+    
+
+    
+}
+
+#page {
+	
+}
+ul{
+   list-style: none;
+   
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+background-color:#E66760;
+    margin-top: 0px;
+    padding-top: 0px;
+    
+	
+	
+   
+}
+
+/* Header-Navigation styles
+.......................................*/
+.main-nav{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.navList{
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 0;
+
+}
+
+.navItem a{
+color: #000000;
+}
+
+.navItem{
+    padding: 5px 25px;
+    margin: auto 0;
+    font-weight: 800;
+    text-align: center;
+    display: inline-block;
+}
+
+.navItem svg{
+    padding-top:5px;
+    width: 25px;
+    height: auto;
+}
+
+
+.site-name{
+    font-size: 22px;
+}
+
+/* Main homepage image styles
+.......................................*/
+
+.pub-wrp{
+    position: relative;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    background-color: rgb(238, 238, 238);
+}
+
+.main-image-container
+{
+	/*height: 600px;*/
+	/* height: 785.325px; */
+/*base: 1100px*/
+position: relative.
+}
+
+.main-image-container img
+{
+    
+    width: 100%;
+    height: auto; /*base: .main-image-container height*/
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+
+.img-text{
+    font-family: 'Indie Flower', cursive;
+    position: absolute;
+    margin: 0 auto;
+    padding: 0 15px;
+    /* padding-left: 5%; */
+    text-align: center;
+    top: 5%;
+    font-size: 32px;
+    font-weight: 300;
+    color: #000000;
+    text-align: center;
+    width:100%;
+   
+}
+
+/*  CSS styles div and chid elements highlighting impact of giveaway on students
+.......................................*/
+
+.studentDiv
+{
+	height:36.363636363636363%;  /*base: 1100px*/
+    margin-top:0px;
+    padding-top: 0px;
+    padding: 30px 0;
+
+background-color: rgb(238, 238, 238);
+}
+.studentImpactClass
+{
+    
+    background-color: rgb(238, 238, 238);
+	/*background-color:#61B7D4;*/
+	height:100%; /* section height is 100% of studentDiv */
+}
+
+.studLeftDiv
+{
+float: left;
+width: 30%;
+}
+
+.studRightDiv
+{
+float: right;
+width: 60%;
+padding-right: 5%;
+}
+
+.studImg
+{
+    margin-top: 1%;
+width :100%; /* 100% of studLeftDiv */
+max-width: 100%; /* max-width set as 100% and height auto for responsive screen */
+height: auto;  
+border-radius: 50%; /* for rounded image */
+padding-top: 4%;
+}
+
+.h1Student
+{
+color: black;
+font-size: 64 px;
+    font-family:'Century Gothic',Verdana,'Helvetica Neue',sans-serif;
+    
+   font-weight:300;
+    letter-spacing:1px;
+    line-height:1.44; 
+}
+
+.text-section
+{
+color: black;
+font-size: 22 px;
+    font-family:'Century Gothic',Verdana,'Helvetica Neue',sans-serif;
+    
+    font-weight:300;
+    letter-spacing:1px;
+    line-height:1.44
+}
+
+.statFigure1
+{
+color: #FFCF55;
+font-size: 100 px;
+    font-family:'Century Gothic',Verdana,'Helvetica Neue',sans-serif;
+    
+   font-weight:bold;
+    letter-spacing:1px;
+    line-height:1.44;
+}
+
+/*  Donor section
+.......................................*/
+
+.donor-container{
+
+margin-bottom: 0px;
+height: 61.267090909090909% /*base: 1100px*/
+}
+
+.donor-section{
+position:relative;
+background: black;
+}
+
+.donor-Img { 
+
+	width: 100%;
+    height:673.938px;
+    margin-bottom: 0px;
+}
+
+
+.topleft {
+		margin-left: 5%;
+		text-align: left;
+	  position:absolute;
+	  bottom: 10%;
+}
+
+
+.donor-family {
+  
+  font-size: 45px;
+  font-weight: bold;
+  padding-top: 50px;
+  color: red;
+  opacity: 0.99;
+}
+
+.donor-text-main {
+
+  font-size: 1.875em;
+  font-weight: normal;
+  padding-bottom: 50px;
+  opacity: 0.99;
+}
+
+.donor-community {
+  font-style: italic;
+  font-size: 15px;
+    font-weight: 500;
+  opacity: 0.99;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.donor-name {
+  
+  font-size: 10px;
+    font-weight: 500;
+  opacity: 0.99;
+}
+
+
+/*  Footer section
+.......................................*/
+
+.footer {
+
+   width: 100%;
+/*   background-color: rgb(238, 238, 238);*/
+   color: white;
+   text-align: center;
+/*    padding: 1% 0% 0% 0%;*/
+background-color: black;
+   padding: 15px 0;
+}
+
+.footer label
+{
+
+    padding:0 2% 0 2%;
+    color:white;
+
+}
+
+.copyright
+{
+color: white;
+}
+
+/* css end: for footer */
+/* Media Queries for Responsive web design
+.......................................*/
+
+@media screen and (max-width: 480px){
+    
+}
+
+@media screen and (max-width: 768px){
+    
+}
+
+@media (max-width: 992px) { 
+   .main-nav{
+
+   }
+   .main-nav ul.navList{
+       
+    }
+    .main-nav ul.navList .navItem{
+       width: 100%; display: block;
+    }
+}
+
