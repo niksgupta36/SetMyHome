@@ -129,24 +129,6 @@
 	<script>
         
     $(document).ready(function(){
-        
-    function updateFooter () {
-    var footerH = $("footer").height();
-    var contentH = $("#maindiv").height();
-    var windowH = $(window).height();
-    if ( contentH + footerH > windowH) {
-        $("footer").css("position", "relative");
-    } else {
-         $("footer").css("position", "absolute");
-    }
-}
-
-    $(window).resize(function () {
-        updateFooter();
-    });
-
-    updateFooter();
-        
     
       $("#btnfrpass").on("click", function(){
           $("#loginform").hide();

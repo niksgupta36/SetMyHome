@@ -64,13 +64,18 @@ button{
 }
 footer
 {
-/*  position:static;*/
+  position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
   margin-bottom: 0;
+  height: 8em;
 }
 
+
+.divfooter{
+    position: relative;
+}
 #passinstruct{
     padding: 2%;
     margin: 4%;
@@ -80,3 +85,42 @@ footer
    
 }
 
+@media (max-width: 985px)
+{
+    .divlogin.col-sm-6 {
+        width: 80%;
+        overflow: hidden;
+    }
+    
+    .divlogin.col-sm-4{
+         width: 80%;
+        overflow: hidden;
+    }
+    
+    .divmascot img{
+        width: 50%;
+        margin-left: 25%;
+    }
+    
+    footer{
+       position: relative;
+        height: 8em;
+    }
+    
+    .col-sm-4{
+        margin-left: 15%;
+    }
+    
+    .maindiv{
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    
+}
+
+@media screen and (max-width: 768px){
+    
+}
