@@ -122,12 +122,36 @@
         
     $(document).ready(function(){
         
-      $("footer").css("position", "relative");
+      function updateFooter () {
+    var footerH = $("footer").height();
+    var contentH = $("#maindiv").height();
+    var windowH = $(window).height();
+    if ( contentH + footerH > windowH) {
+        $("footer").css("position", "relative");
+    } else {
+         $("footer").css("position", "absolute");
+    }
+}
+
+    $(window).resize(function () {
+        updateFooter();
+    });
+
+    updateFooter();
         
+       $("input").focus(function(){
+       
+        $(this).css("background-color", "lightgrey");
         
+    });
         
+    $("input").blur(function(){
+       
+        $(this).css("background-color", "white");
         
+    });    
         
+         
     });    
         
         

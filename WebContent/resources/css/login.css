@@ -6,6 +6,7 @@
 .divlogin{
     margin-top: 5%;
     padding-bottom: 2.5rem;
+    overflow: hidden;
 }
 
 .divmascot img{
@@ -63,7 +64,7 @@ button{
 }
 footer
 {
-  position: absolute;
+/*  position:static;*/
   right: 0;
   bottom: 0;
   left: 0;
@@ -78,5 +79,4 @@ footer
   
    
 }
-
 

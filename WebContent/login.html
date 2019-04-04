@@ -66,9 +66,9 @@
     
 <!--  login starts -->
 
-    <div class="container-fluid">      
+    <div class="maindiv">      
     
-    </div>
+   
     <div class="row divlogin">
     
     <div class="col-sm-6 divmascot" >   
@@ -105,7 +105,7 @@
     
     <br>
     <br>
-    
+    </div>
     <footer>
 		<div class="footer">
 			<label> About </label> <label> Contact Us </label> <label>
@@ -130,13 +130,43 @@
         
     $(document).ready(function(){
         
-      $("footer").css("position", "absolute");
+    function updateFooter () {
+    var footerH = $("footer").height();
+    var contentH = $("#maindiv").height();
+    var windowH = $(window).height();
+    if ( contentH + footerH > windowH) {
+        $("footer").css("position", "relative");
+    } else {
+         $("footer").css("position", "absolute");
+    }
+}
+
+    $(window).resize(function () {
+        updateFooter();
+    });
+
+    updateFooter();
+        
+    
       $("#btnfrpass").on("click", function(){
           $("#loginform").hide();
           $("#loginreset").show();
           $("#logheader").html("Reset your password");
-           $("footer").css("position", "relative");
-      });    
+      }); 
+        
+        
+        
+    $("input").focus(function(){
+       
+        $(this).css("background-color", "lightgrey");
+        
+    });
+        
+    $("input").blur(function(){
+       
+        $(this).css("background-color", "white");
+        
+    });
         
     });    
         
