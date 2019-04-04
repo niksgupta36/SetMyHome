@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="resources/css/setMyHome.css">
     <link rel="stylesheet" href="resources/css/login.css">
     <script src="jquery-3.3.1.js"></script> 
-<title>Login</title>
+<title>Sign up</title>
 </head>
     
 <body>
@@ -38,7 +38,7 @@
 					<li class="nav-item active"><a class="nav-link" href="#">Students</a></li>
 					<li class="nav-item active"><a class="nav-link" href="#">Donors</a></li>
 					<li class="nav-item active"><a class="nav-link" href="#">Volunteers</a></li>
-					<li class="nav-item active"><a class="nav-link" href="login.html">Login</a></li>
+				<li class="nav-item active"><a class="nav-link" href="login.html">Login</a></li>
 					<li class="nav-item active"><a class="nav-link" href="signup.html">Sign up</a></li>
 
 					<!-- <li class="nav-item dropdown"><a
@@ -76,28 +76,20 @@
         </div>
         
     <div class="col-sm-4">
-    <h2 id="logheader">Log in to your account</h2>
-    <div id="loginform">
-    <input type="email" id="txtusername" name="username" placeholder="Email" required>
-    <input type="password" id ="txtpass" name="password" placeholder="password" required>
-    <button  type="button" id="btnfrpass" name="forgot password">Forgot Password?</button>
-    <button  type="button" id="btnNoaccnt" name="forgot password" onclick="window.location.href='signup.html'">Don't have an account?</button>
+    <h2>Create your account</h2>
+    <div id="accntform">
+      <p id="passinstruct">Password must be 8-13 characters long. Your Password Must have at least 1 lowercase alphabet.
+            Your Password Must have at least 1 uppercase alphabet. Your Password Must have at least 1 number.</p>
+    <input type="email" id="txtaccemail" name="username" placeholder="Email">
+    <input type="password" id ="txtaccpass" name="password" placeholder="password">
+    <input type="password" id ="txtcfrmpass" name="Confirm password" placeholder="Confirm password">
+     <input type="text" id="txtquestion" name="security quesyion" placeholder="Security Question: Favorite color?">
+    <button  type="button" id="btnhaveacc" name="have account" onclick="window.location.href='login.html'">Already have an account?</button>
         <br>
-    <button type = "submit" name="login" class="btn btn-primary">Log in</button> 
+        <br>
+    <button type = "submit" name="login" class="btn btn-primary">Sign Up</button> 
     </div>
-    
-   <div id="loginreset" style="display: none">
-    
-     <p id="passinstruct">Password must be 8-13 characters long. Your Password Must have at least 1 lowercase alphabet.
-            Your Password Must have at least 1 uppercase alphabet. Your Password Must have at least 1 number.</p> 
-    <input type="email" id="txtemail" name="email" placeholder="Email">
-    <input type="text" id="txtquestion" name="security quesyion" placeholder="Security Question: Favorite color?">
-       <input type="password" id ="txtoldpass" name="password" placeholder="New Password">
-       
-       <input type="password" id ="txtoldpass" name="password" placeholder="Confrim Password">
-        <br>
-    <button type = "submit" name="login" id="btnlogin" class="btn btn-primary">Reset Password</button> 
-    </div>    
+     
         
        
     </div>   
@@ -130,13 +122,11 @@
         
     $(document).ready(function(){
         
-      $("footer").css("position", "absolute");
-      $("#btnfrpass").on("click", function(){
-          $("#loginform").hide();
-          $("#loginreset").show();
-          $("#logheader").html("Reset your password");
-           $("footer").css("position", "relative");
-      });    
+      $("footer").css("position", "relative");
+        
+        
+        
+        
         
     });    
         

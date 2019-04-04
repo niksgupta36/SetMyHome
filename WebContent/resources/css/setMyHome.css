@@ -18,6 +18,11 @@ body, button, label {
 	line-height: 1.44;
 }
 
+body{
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
 button {
 	color: white;
 }
@@ -95,7 +100,7 @@ padding-bottom: 5%;
 
 text-align: center;
 padding: 2% 0;
-background-color:  #F8FAFB;
+background-color: lightgrey;
 }
 
 
@@ -103,3 +108,14 @@ background-color:  #F8FAFB;
 {
     padding:0 2% 0 2%;
 }
+
+
+footer
+{
+  
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 0;
+}
+
